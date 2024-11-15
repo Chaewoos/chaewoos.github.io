@@ -107,33 +107,31 @@
 
         /* 채팅 상담 버튼 스타일 */
         .chat-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             background-color: #FEE500;
             color: #392020;
             border: none;
-            border-radius: 12px;
+            border-radius: 50%;
             cursor: pointer;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: all 0.2s ease;
+            margin-left: 10px;
         }
 
         .chat-button:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
         }
 
         /* 채팅 아이콘 스일 */
         .chat-icon {
-            width: 36px;
-            height: 36px;
+            width: 42px;
+            height: 42px;
             fill: currentColor;
         }
 
@@ -142,35 +140,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             margin-bottom: 30px;
-        }
-
-        .chat-button {
-            width: 70px;
-            height: 70px;
-            background-color: #FEE500;
-            color: #392020;
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.2s ease;
-        }
-
-        .chat-button:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
-        }
-
-        .chat-icon {
-            width: 36px;
-            height: 36px;
-            fill: currentColor;
         }
 
         .social-buttons {

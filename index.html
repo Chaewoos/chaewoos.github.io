@@ -108,33 +108,38 @@
         /* 채팅 상담 버튼 스타일 */
         .chat-button {
             position: absolute;
-            top: 20px;
             right: 20px;
-            width: 70px;
-            height: 70px;
+            top: 30px;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
             background-color: #FEE500;
             color: #392020;
             border: none;
-            border-radius: 12px;
+            border-radius: 50%;  /* 완전한 원형 */
             cursor: pointer;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: all 0.2s ease;
+            overflow: hidden;  /* 내부 아이콘이 원형 밖으로 나가지 않도록 */
         }
 
         .chat-button:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
+            transform: translateY(-50%) scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
         }
 
         /* 채팅 아이콘 스일 */
         .chat-icon {
-            width: 36px;
-            height: 36px;
+            width: 85px;
+            height: 85px;
             fill: currentColor;
+            background: transparent;  /* 배경 투명하게 */
+            border-radius: 50%;  /* 아이콘도 동그랗게 */
+            padding: 2px;  /* 약간의 여백 추가 */
         }
 
         /* 새로운 스타일 추가 */
